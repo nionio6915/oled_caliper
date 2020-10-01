@@ -37,6 +37,9 @@ void setup()
   oled.printStr(ALIGN_CENTER, 0, "Caliper");
   oled.setDigitMinWd(9);
   oled.setCharMinWd(9);
+  ; added these twp pins to get A1 as +5V and A4 as ground
+  digitalWrite(A1, high); 
+  digitalWrite(A4, low);
 }
 
 char buf[20];
